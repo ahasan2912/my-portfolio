@@ -1,12 +1,15 @@
 import { createBrowserRouter } from "react-router-dom";
 import MainLayout from "../layout/MainLayout";
 import Home from "../components/Home";
+import About from "../pages/About";
+import ErrorPages from "../pages/ErrorPages";
+import Project from "../pages/Project";
 
 const router = createBrowserRouter([
     {
         path: "/",
         element: <MainLayout></MainLayout>,
-        errorElement: <div>Error Pages</div>,
+        errorElement: <ErrorPages></ErrorPages>,
         children: [
             {
                 path: "/",
@@ -14,15 +17,16 @@ const router = createBrowserRouter([
             },
             {
                 path: "/about",
-                element: <div>About</div>
+                element: <About></About>
             },
             {
                 path: "/project",
-                element: <div>Projects</div>
+                element: <Project></Project>,
+                loader: ()=> fetch("/projectdata.json")
             },
             {
-                path: "/contact",
-                element: <div>Contact Info</div>
+                path: "/blog",
+                element: <div>blog</div>
             }
         ]
     }
