@@ -25,9 +25,9 @@ const Navbar = () => {
                         tabIndex={0}
                         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-50 mt-3 w-52 p-2 shadow gap-3 text-black">
                         <li><NavLink to="/" className="text-base">Home</NavLink></li>
-                        <li><NavLink to="/about" className="text-base">About</NavLink></li>
+                        <li><NavLink to="/about" className="text-base"></NavLink></li>
                         <li><NavLink to="/project" className="text-base">Projects</NavLink></li>
-                        <li><NavLink to="/blog" className="text-base">Blog</NavLink></li>
+                        <li><NavLink to="/blog" className="text-base"></NavLink></li>
                     </ul>
                 </div>
                 <div className="hidden md:block">
@@ -37,9 +37,9 @@ const Navbar = () => {
             <div className="navbar-end hidden md:flex">
                 <ul className="menu menu-horizontal px-1 gap-3 text-black text-base font-semibold">
                     <li><NavLink to="/">Home</NavLink></li>
-                    <li><NavLink to="/about">About</NavLink></li>
+                    <li><NavLink to="/about"></NavLink></li>
                     <li><NavLink to="/project">Projects</NavLink></li>
-                    <li><NavLink to="/blog">Blog</NavLink></li>
+                    <li><NavLink to="/blog"></NavLink></li>
                 </ul>
             </div>
             <div className="md:hidden navbar-end">
