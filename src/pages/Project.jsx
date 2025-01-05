@@ -5,12 +5,12 @@ import ProjectCard from '../components/ProjectCard';
 const Project = () => {
     const data = useLoaderData();
     return (
-        <div className='mt-24 flex flex-col justify-center items-center text-center'>
+        <div className='mt-16 flex flex-col justify-center items-center text-center'>
             <div className='space-y-1 px-2'>
                 <h1 className='text-4xl sm:text-5xl font-semibold'>My Recent Works</h1>
                 <p className='text-base sm:text-lg'>Here are a few projects I've worked on recently.</p>
             </div>
-            <div className='grid grid-cols-1 lg:grid-cols-3 gap-8 mt-8 px-4'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-6 px-4'>
                 {
                     data.map(card => <ProjectCard key={card.id} card={card}></ProjectCard>)
                 }
