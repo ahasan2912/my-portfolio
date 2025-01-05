@@ -30,7 +30,7 @@ const Home = () => {
                             className="text-xl text-gray-500 font-bold text-center"
                             sequence={[
 
-                                'Frontend Developer Specializing in JavaScript.',
+                                'Frontend Developer Specializing in React js.',
                                 1000,
                             ]}
                             speed={40}

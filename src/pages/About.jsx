@@ -28,7 +28,7 @@ const About = () => {
                 <p className="text-gray-600 mb-4 text-justify">
                     I believe my passion for learning constantly drives me to explore new horizons. With a deep curiosity about technology, I am currently delving into the world of web technologies, though my professional journey began in the software service industry.
                 </p>
-                <p className="text-gray-600 mb-4">
+                <p className="text-gray-600 mb-4 text-justify">
                     Each day is a journey of discovery, where books and writing fuel my creativity and offer fresh perspectives. Inspired by diverse stories of people, I view coding as more than a profession—it’s a medium for meaningful creation and problem-solving. My passion for learning drives me to explore, innovate, and embrace the endless pursuit of knowledge
                 </p>
                 {/* Tabs */}
@@ -89,7 +89,7 @@ const About = () => {
                                     </li>
                                     <li className="flex items-center gap-1">
                                         <FaGithub size={22} />
-                                        <span className='text-lg'>Git & GitHub</span>
+                                        <span className='text-lg'>Git & GitHub Collaboration</span>
                                     </li>
                                     <li className="flex items-center gap-1">
                                         <SiHostinger />
@@ -104,7 +104,7 @@ const About = () => {
                         <div>
 
                             <div className='flex flex-col md:flex-row justify-between'>
-                                <div className='w-1/2'>
+                                <div className='w-full md:w-1/2'>
                                     <h2 className="text-xl font-bold mb-2">Education</h2>
                                     <p>BSc in Computer Science and Engineering</p>
                                     <p>Daffodil International University (2021-2025)</p>
@@ -115,7 +115,7 @@ const About = () => {
                                     <p><span className='font-semibold text-base'># </span>Participate Art of Living Seminar at DIU
                                     </p>
                                 </div>
-                                <div className='w-1/2'>
+                                <div className='w-full md:w-1/2'>
                                     <h1 className='text-xl font-bold my-1'>Achievements</h1>
                                     <p><span className='font-semibold text-base'># </span>Associate Member at DIU Computer and Programming Club (CPC)
                                     </p>
