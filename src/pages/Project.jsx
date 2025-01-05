@@ -1,11 +1,15 @@
 import React from 'react';
 import { Link, useLoaderData } from 'react-router-dom';
 import ProjectCard from '../components/ProjectCard';
+import { Helmet } from 'react-helmet-async';
 
 const Project = () => {
     const data = useLoaderData();
     return (
         <div className='mt-16 flex flex-col justify-center items-center text-center'>
+            <Helmet>
+                <title>Ahasan's World | Projects</title>
+            </Helmet>
             <div className='space-y-1 px-2'>
                 <h1 className='text-4xl sm:text-5xl font-semibold'>My Recent Works</h1>
                 <p className='text-base sm:text-lg'>Here are a few projects I've worked on recently.</p>

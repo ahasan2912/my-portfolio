@@ -8,6 +8,7 @@ import { TfiEmail } from "react-icons/tfi";
 import toast, { Toaster } from 'react-hot-toast';
 import ReactWhatsapp from "react-whatsapp";
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 
 const Contact = () => {
     const form = useRef();
@@ -30,6 +31,9 @@ const Contact = () => {
     };
     return (
         <div className="bg-gray-100 min-h-screen flex items-center justify-center md:mt-0 md:py-0">
+            <Helmet>
+                <title>Ahasan's World | Contact</title>
+            </Helmet>
             <div className="container mx-auto px-4">
                 <Toaster />
                 <h1 className="text-4xl font-bold text-center my-10">Contact Me</h1>

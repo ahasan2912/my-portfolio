@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { useLoaderData, useParams } from 'react-router-dom';
 
 const ProjectDetails = () => {
@@ -13,6 +14,9 @@ const ProjectDetails = () => {
     return (
         <div className='max-w-6xl mx-auto px-3'>
             <div className='border flex flex-col lg:flex-row justify-center my-10 md:my-24 lg:my-32 gap-5 p-5 rounded-md'>
+                <Helmet>
+                    <title>Ahasan's World | Details</title>
+                </Helmet>
                 <div className='lg:w-1/2'>
                     <img className='w-full h-full object-cover rounded-lg' src={image} alt="" />
                 </div>

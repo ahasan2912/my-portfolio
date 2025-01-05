@@ -4,7 +4,7 @@ import { loadSlim } from "@tsparticles/slim";
 import photo from "../assets/new.jpg";
 import { Link } from "react-router-dom";
 import { TypeAnimation } from "react-type-animation";
-
+import { Helmet } from "react-helmet-async";
 
 const Home = () => {
     const [init, setInit] = useState(false);
@@ -21,6 +21,9 @@ const Home = () => {
     };
     return (
         <div className="relative overflow-hidde min-h-screen">
+            <Helmet>
+                <title>Ahasan's World | Home</title>
+            </Helmet>
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-40 w-full">
                 <div className="flex flex-col items-center justify-center gap-2 sm:gap-4 text-center px-2">
                     <img className="rounded-full w-60 h-60 border border-gray-500 p-2" src={photo} alt="" />

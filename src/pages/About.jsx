@@ -8,12 +8,16 @@ import { IoLogoFirebase } from 'react-icons/io5';
 import { RiTailwindCssFill } from 'react-icons/ri';
 import { SiHostinger } from 'react-icons/si';
 import { DiMongodb } from 'react-icons/di';
+import { Helmet } from 'react-helmet-async';
 const About = () => {
     const [activeTab, setActiveTab] = useState("skills");
 
     return (
         <div className="flex flex-col md:flex-row max-w-6xl mx-auto p-6 bg-white shadow-lg rounded-lg md:mt-32">
             {/* Left Section: Image */}
+            <Helmet>
+                <title>Ahasan's World | About</title>
+            </Helmet>
             <div className="w-full md:w-1/3">
                 <img
                     src={photo} // Replace this URL with your uploaded image
