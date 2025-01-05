@@ -18,7 +18,7 @@ const About = () => {
                 <img
                     src={photo} // Replace this URL with your uploaded image
                     alt="Profile"
-                    className="rounded-md shadow-lg h-full object-cover hover:border-8 border-[#FFA07A] duration-500 ease-linear hover:transition"
+                    className="rounded-md shadow-lg h-full object-cover hover:border-8 border-blue-400 duration-1000 ease-linear hover:transition"
                 />
             </div>
 

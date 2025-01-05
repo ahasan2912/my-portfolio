@@ -47,22 +47,22 @@ const Navbar = () => {
                 {/* Desktop Menu */}
                 <ul className="hidden sm:flex space-x-6">
                     <li>
-                        <NavLink to="/" className="hover:text-blue-500">
+                        <NavLink to="/" className="hover:text-blue-500 font-semibold">
                             Home
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to="/about" className="hover:text-blue-500">
+                        <NavLink to="/about" className="hover:text-blue-500 font-semibold">
                             About Me
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to="/project" className="hover:text-blue-500">
+                        <NavLink to="/project" className="hover:text-blue-500 font-semibold">
                             Projects
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to="/contact" className="hover:text-blue-500">
+                        <NavLink to="/contact" className="hover:text-blue-500 font-semibold">
                             Contact
                         </NavLink>
                     </li>

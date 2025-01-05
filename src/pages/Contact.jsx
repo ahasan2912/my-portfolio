@@ -7,48 +7,45 @@ import { MdOutlineEmail } from "react-icons/md";
 import { TfiEmail } from "react-icons/tfi";
 import toast, { Toaster } from 'react-hot-toast';
 import ReactWhatsapp from "react-whatsapp";
+import { Link } from 'react-router-dom';
 
 const Contact = () => {
     const form = useRef();
     const sendEmail = (e) => {
         e.preventDefault();
-        const from = e.target;
+        const data = e.target;
         emailjs
-            .sendForm(
-                'service_ebrlz0k',
-                'template_7jyavji',
-                form.current, {
+            .sendForm('service_ebrlz0k', 'template_7jyavji', form.current, {
                 publicKey: 'I2AL38O6xwUGEigGZ',
             })
             .then(
                 () => {
-                    // console.log('SUCCESS!');
-                    toast.success("Sending Successfull!");
-                    from.reset();
+                    toast.success("Email sending successfully!")
+                    data.reset();
                 },
                 (error) => {
-                    // console.log('FAILED...', error.text);
-                    toast.error("Sending Failed")
+                    toast.error(`Email sending Failed`, error.text);
                 },
             );
     };
     return (
-        <div className="bg-gray-100 min-h-screen flex items-center justify-center mt-10 md:mt-0 py-5 md:py-0">
+        <div className="bg-gray-100 min-h-screen flex items-center justify-center md:mt-0 md:py-0">
             <div className="container mx-auto px-4">
                 <Toaster />
-                <h1 className="text-4xl font-bold text-center mb-10">Contact Me</h1>
+                <h1 className="text-4xl font-bold text-center my-10">Contact Me</h1>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     {/* Left Column - Form */}
                     <div className="bg-white shadow-md rounded-lg px-8 py-6">
                         <h2 className="text-2xl font-semibold mb-6">Get In Touch</h2>
+
                         <form ref={form} onSubmit={sendEmail}>
                             <div className="mb-2">
-                                <label className="block text-gray-700 font-medium mb-1" name="from_name">
+                                <label className="block text-gray-700 font-medium mb-1">
                                     Your Name <span className="text-orange-500">*</span>
                                 </label>
                                 <input
                                     type="text"
-                                    id="name"
+                                    name="name"
                                     className="input input-bordered w-full"
                                     placeholder="Enter your name"
                                     required
@@ -56,12 +53,12 @@ const Contact = () => {
                             </div>
 
                             <div className="mb-2">
-                                <label className="block text-gray-700 font-medium mb-1" name="from_email">
+                                <label className="block text-gray-700 font-medium mb-1">
                                     Email Address <span className="text-orange-500">*</span>
                                 </label>
                                 <input
                                     type="email"
-                                    id="email"
+                                    name="email"
                                     className="input input-bordered w-full"
                                     placeholder="Enter your email"
                                     required
@@ -69,12 +66,12 @@ const Contact = () => {
                             </div>
 
                             <div className="mb-2">
-                                <label className="block text-gray-700 font-medium mb-1" name="from_subject">
+                                <label className="block text-gray-700 font-medium mb-1">
                                     Enter Your Subject <span className="text-orange-500">*</span>
                                 </label>
                                 <input
                                     type="text"
-                                    id="subject"
+                                    name="subject"
                                     className="input input-bordered w-full"
                                     placeholder="Enter your subject"
                                     required
@@ -82,13 +79,14 @@ const Contact = () => {
                             </div>
 
                             <div className="mb-2">
-                                <label className="block text-gray-700 font-medium mb-1" name="message">
-                                    Enter Your Text
+                                <label className="block text-gray-700 font-medium mb-1">
+                                    Enter Your Text <span className="text-orange-500">*</span>
                                 </label>
                                 <textarea
-                                    id="message"
                                     className="textarea textarea-bordered w-full"
                                     placeholder="Write your message"
+                                    name="message"
+                                    required
                                 ></textarea>
                             </div>
                             <input type="submit" className='btn bg-gradient-to-r from-cyan-500 to-blue-500 text-white text-base hover:bg-black w-full' value="Send Mail" />
@@ -114,7 +112,7 @@ const Contact = () => {
                             </div>
                             <div>
                                 <h3 className="font-semibold text-lg">Email</h3>
-                                <p className="text-gray-700">ahasanhabib2912@gmail.com</p>
+                                <Link to='https://mail.google.com/mail/u/0/#inbox?compose=new' className="text-gray-700">ahasanhabib2912@gmail.com</Link>
                             </div>
                         </div>
 

@@ -22,10 +22,12 @@ const Home = () => {
     return (
         <div className="relative overflow-hidde min-h-screen">
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-40 w-full">
-                <div className="flex flex-col items-center justify-center gap-4">
+                <div className="flex flex-col items-center justify-center gap-2 sm:gap-4 text-center px-2">
                     <img className="rounded-full w-60 h-60 border border-gray-500 p-2" src={photo} alt="" />
-                    <div><h1 className="text-5xl text-black font-bold text-center">Welcome Ahasan's World</h1></div>
-                    <div className="mt-2">
+                    <div>
+                        <h1 className="text-5xl text-black font-bold text-center">Welcome Ahasan's World</h1>
+                    </div>
+                    <div className="mt-1">
                         <TypeAnimation
                             className="text-xl text-gray-500 font-bold text-center"
                             sequence={[
@@ -38,7 +40,7 @@ const Home = () => {
                         />
                     </div>
                     <div className="">
-                        <a href="/public/Ahasan's Rsume.pdf" download="Ahasan'sResume.pdf" className="btn bg-gradient-to-r from-cyan-500 to-blue-500 text-white text-base hover:bg-black">Download Resume</a>
+                        <a href="Ahasan's Rsume.pdf" download="Ahasan'sResume.pdf" className="btn bg-gradient-to-r from-cyan-500 to-blue-500 text-white text-base hover:bg-black">Download Resume</a>
                     </div>
                 </div>
             </div>
