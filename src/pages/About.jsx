@@ -9,6 +9,7 @@ import { RiTailwindCssFill } from 'react-icons/ri';
 import { SiHostinger } from 'react-icons/si';
 import { DiMongodb } from 'react-icons/di';
 import { Helmet } from 'react-helmet-async';
+import { SiDaisyui } from "react-icons/si";
 const About = () => {
     const [activeTab, setActiveTab] = useState("skills");
 
@@ -30,10 +31,10 @@ const About = () => {
             <div className="w-full md:w-2/3 mt-6 md:mt-0 md:pl-6">
                 <h1 className="text-4xl font-bold text-gray-800 mb-4">About Me</h1>
                 <p className="text-gray-600 mb-4 text-justify">
-                    I believe my passion for learning constantly drives me to explore new horizons. With a deep curiosity about technology, I am currently delving into the world of web technologies, though my professional journey began in the software service industry.
+                    I am Frontend Web Developer with knowledge of JavaScript, React.js, Next.js and variety of frontend technologies. Easy to understanding fundamentals concept of React component lifecycle and Pixel perfect design Figma to HTML. I am motivated to offer my diverse abilities to relevant and innovative projects because I am committed to code quality and continual learning.
                 </p>
                 <p className="text-gray-600 mb-4 text-justify">
-                    Each day is a journey of discovery, where books and writing fuel my creativity and offer fresh perspectives. Inspired by diverse stories of people, I view coding as more than a profession—it’s a medium for meaningful creation and problem-solving. My passion for learning drives me to explore, innovate, and embrace the endless pursuit of knowledge
+                Every day is a journey of discovery, where books and writing inspire my creativity and give me new perspectives. The diverse stories of people motivate me, and I see coding not just as a job but as a way to create something meaningful and solve problems. My deep love for learning drives me to explore, innovate, and keep seeking knowledge endlessly.
                 </p>
                 {/* Tabs */}
                 <div className="tabs bg-gray-100 shadow-xl py-2 flex justify-between px-10 ">
@@ -71,15 +72,15 @@ const About = () => {
                                     </li>
                                     <li className="flex items-center gap-1">
                                         <FaNodeJs size={22} />
-                                        <span className='text-lg'> Node js(basic)</span>
-                                    </li>
-                                    <li className="flex items-center gap-1">
-                                        <DiMongodb size={24} />
-                                        <span className='text-lg'> MongoDB</span>
+                                        <span className='text-lg'> Next js</span>
                                     </li>
                                     <li className="flex items-center gap-1">
                                         <RiTailwindCssFill size={22} />
                                         <span className='text-lg'> Tailwind CSS</span>
+                                    </li>
+                                    <li className="flex items-center gap-1">
+                                        <SiDaisyui size={26} />
+                                        <span className='text-lg'>DaisyUI Components</span>
                                     </li>
                                 </div>
                                 <div>
@@ -121,16 +122,20 @@ const About = () => {
                                 </div>
                                 <div className='w-full md:w-1/2'>
                                     <h1 className='text-xl font-bold my-1'>Achievements</h1>
-                                    <p><span className='font-semibold text-base'># </span>Associate Member at DIU Computer and Programming Club (CPC)
-                                    </p>
-                                    <p><span className='font-semibold text-base'># </span>Take of Programming Contest DIU Ranking 11th
+                                    <p>
+                                        <span className='font-semibold text-base'># </span>Take of Programming Contest DIU Ranking 11th
                                         (12/2021) <Link to='https://toph.co/c/diu-take-off-2021/standings' target="_blank" className='text-blue-500'>link...</Link>
                                     </p>
-                                    <p><span className='font-semibold text-base'># </span>Take of Programming Contest DIU Ranking 96th
+                                    <p>
+                                        <span className='font-semibold text-base'># </span>Take of Programming Contest DIU Ranking 96th
                                         (04/2022) <Link to='https://toph.co/c/diu-take-off-2022/standings' target="_blank" className='text-blue-500'>link...</Link>
                                     </p>
-                                    <p><span className='font-semibold text-base'># </span>Unlock the Algorithm Programming Conteset DIU
+                                    <p>
+                                        <span className='font-semibold text-base'># </span>Unlock the Algorithm Programming Conteset DIU
                                         Ranking 46th (04/2023) <Link to='https://toph.co/c/unlock-the-algorithm-spring-2023/standings' target="_blank" className='text-blue-500'>link...</Link>
+                                    </p>
+                                    <p>
+                                        <span className='font-semibold text-base'># </span>Associate Member at DIU Computer and Programming Club (CPC)
                                     </p>
                                 </div>
                             </div>
