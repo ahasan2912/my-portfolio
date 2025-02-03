@@ -86,7 +86,7 @@ const About = () => {
                                 <div>
                                     <li className="flex items-center gap-1">
                                         <FaBootstrap size={22} />
-                                        <span className='text-lg'> Bootstrap CSS</span>
+                                        <span className='text-lg'> Bootstrap</span>
                                     </li>
                                     <li className="flex items-center gap-1">
                                         <IoLogoFirebase size={22} />
@@ -124,15 +124,15 @@ const About = () => {
                                     <h1 className='text-xl font-bold my-1'>Achievements</h1>
                                     <p>
                                         <span className='font-semibold text-base'># </span>Take of Programming Contest DIU Ranking 11th
-                                        (12/2021) <Link to='https://toph.co/c/diu-take-off-2021/standings' target="_blank" className='text-blue-500'>link...</Link>
+                                        (12/2021) <Link to='https://toph.co/c/diu-take-off-2021/standings' target="_blank" className='text-blue-500'>Link...</Link>
                                     </p>
                                     <p>
                                         <span className='font-semibold text-base'># </span>Take of Programming Contest DIU Ranking 96th
-                                        (04/2022) <Link to='https://toph.co/c/diu-take-off-2022/standings' target="_blank" className='text-blue-500'>link...</Link>
+                                        (04/2022) <Link to='https://toph.co/c/diu-take-off-2022/standings' target="_blank" className='text-blue-500'>Link...</Link>
                                     </p>
                                     <p>
                                         <span className='font-semibold text-base'># </span>Unlock the Algorithm Programming Conteset DIU
-                                        Ranking 46th (04/2023) <Link to='https://toph.co/c/unlock-the-algorithm-spring-2023/standings' target="_blank" className='text-blue-500'>link...</Link>
+                                        Ranking 46th (04/2023) <Link to='https://toph.co/c/unlock-the-algorithm-spring-2023/standings' target="_blank" className='text-blue-500'>Link...</Link>
                                     </p>
                                     <p>
                                         <span className='font-semibold text-base'># </span>Associate Member at DIU Computer and Programming Club (CPC)

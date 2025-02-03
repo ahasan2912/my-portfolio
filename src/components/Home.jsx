@@ -43,7 +43,7 @@ const Home = () => {
                         />
                     </div>
                     <div className="">
-                        <a href="Ahasan's Resume.pdf" download="Ahasan'sResume.pdf" className="btn bg-gradient-to-r from-cyan-500 to-blue-500 text-white text-base hover:bg-black">Download Resume</a>
+                        <a href="Ahsan's Resume.pdf" download="Ahasan'sResume.pdf" className="btn bg-gradient-to-r from-cyan-500 to-blue-500 text-white text-base hover:bg-black">Download Resume</a>
                     </div>
                 </div>
             </div>
