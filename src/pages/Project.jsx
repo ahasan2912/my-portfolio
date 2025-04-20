@@ -6,7 +6,7 @@ import { Helmet } from 'react-helmet-async';
 const Project = () => {
     const data = useLoaderData();
     return (
-        <div className='mt-16 flex flex-col justify-center items-center text-center'>
+        <div className='mt-8 md:mt-16 flex flex-col justify-center items-center text-center'>
             <Helmet>
                 <title>Ahasan's World | Projects</title>
             </Helmet>

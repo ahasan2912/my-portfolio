@@ -1,6 +1,15 @@
 [
   {
     "id": 1,
+    "image": "https://i.ibb.co.com/8nWLqRP5/medicale.jpg",
+    "headline": "Medihub Medical Store",
+    "description": "MediHub Medical Store is a multi-vendor e-commerce platform built with the FullStack, enabling seamless online medicine and healthcare product sales. It offers role-based authentication, allowing buyers, sellers, and admins to manage their respective dashboards. Key features include product management, secure Stripe payments, order tracking, and real-time updates. The platform ensures responsive design, JWT authentication, private routes, and secure data storage. With pagination, sorting, searching, React Hook Form, TanStack Query, and SEO optimization, MediHub delivers a high-performance and user-friendly experience for online medical shopping.",
+    "github": "https://github.com/ahasan2912/mediHub-client-side",
+    "sitelink": "https://medihub-fullstack.web.app/",
+    "technologies": ["React js","Express js", "MongoDB", "React Router","React Query", "Firebase", "JWT Token", "CSS/Tailwind", "DaisyUI", "React Toastify", "React Icons", "Git & GitHub"]
+  },
+  {
+    "id": 2,
     "image": "https://i.ibb.co.com/Jzn54N3/Sushi-Platter-08.jpg",
     "headline": "Pastaria Hotel and Restaurant",
     "description": "The Pastaria Hotel and Restaurant Management Website is a full-stack application developed using the MERN stack (MongoDB, Express.js, React.js, and Node.js). This project aims to enhance customer engagement with features like online reservations and ordering while streamlining internal operations, including staff and order management, to improve overall efficiency and user experience. The purpose of the Pastaria Hotel and Restaurant Management Website is to enhance customer engagement through a user-friendly platform while optimizing internal operations like staff and order management for improved efficiency and service quality.",
@@ -9,21 +18,12 @@
     "technologies": ["React js", "Node js", "Express js", "MongoDB", "React Router", "CSS/Tailwind", "DaisyUI", "JWT Token", "Firebase", "Swiper js", "React Toastify", "Git & GitHub"]
   },
   {
-    "id": 2,
+    "id": 3,
     "image": "https://i.ibb.co.com/98rRFR4/Tennis-Balls.jpg",
     "headline": "Online Sports Store",
     "description": "The Sports Accessories Online Store is a responsive e-commerce platform designed to provide customers with an efficient and user-friendly shopping experience for a wide range of sports equipment and apparel. The website offers features such as intuitive browsing, secure user authentication, and detailed product reviews. It caters to various sports disciplines, ensuring accessibility for enthusiasts and professionals alike. The platform also includes robust product management, allowing seamless inventory updates. With a focus on functionality and design, the store ensures a responsive and engaging experience across all devices, aiming to meet the needs of sports enthusiasts worldwide.",
     "sitelink": "https://sport-equipment-store2912.netlify.app/",
     "technologies": ["React js", "Node js", "Express js", "MongoDB", "React Router", "CSS/Tailwind", "DaisyUI", "Firebase", "Swiper js", "React Toastify", "React Icons", "Git & GitHub"]
-  },
-  {
-    "id": 3,
-    "image": "https://i.ibb.co.com/C61yfzn/dragon-news.jpg",
-    "headline": "Career Counseling",
-    "description": "The career counseling project is a web platform that provides personalized career recommendations, resources, and tools. It features secure authentication and responsive design for a seamless experience across devices, empowering users with insights and advice to guide their professional decisions.",
-    "github": "https://github.com/ahasan2912/career-cousnseling-react",
-    "sitelink": "https://career-counseling2912-a9.netlify.app/",
-    "technologies": ["React js","React Router", "CSS/Tailwind", "DaisyUI", "Firebase", "Swiper js", "React Toastify", "React Icons", "Git & GitHub"]
   },
   {
     "id": 4,
@@ -36,12 +36,12 @@
   },
   {
     "id": 5,
-    "image": "https://i.ibb.co.com/W5pmFB7/cricket-724615-640.jpg",
-    "headline": "Bpl team draft",
-    "description": "The BPL Team Draft is a platform for managing fantasy cricket teams for the Bangladesh Premier League. Users can browse player profiles, select players, and view key details. Built with React and Tailwind CSS, it offers smooth navigation and team management features.",
-    "github": "https://github.com/ahasan2912/bpl-team-draft-react",
-    "sitelink": "https://bpl-team-draft-b10-a7.netlify.app/",
-    "technologies": ["React js", "CSS/Tailwind", "DaisyUI", "React Toastify", "React Icons", "Git & GitHub"]
+    "image": "https://i.ibb.co.com/C61yfzn/dragon-news.jpg",
+    "headline": "Career Counseling",
+    "description": "The career counseling project is a web platform that provides personalized career recommendations, resources, and tools. It features secure authentication and responsive design for a seamless experience across devices, empowering users with insights and advice to guide their professional decisions.",
+    "github": "https://github.com/ahasan2912/career-cousnseling-react",
+    "sitelink": "https://career-counseling2912-a9.netlify.app/",
+    "technologies": ["React js","React Router", "CSS/Tailwind", "DaisyUI", "Firebase", "Swiper js", "React Toastify", "React Icons", "Git & GitHub"]
   },
   {
     "id": 6,

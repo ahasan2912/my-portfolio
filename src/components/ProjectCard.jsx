@@ -15,10 +15,10 @@ const ProjectCard = ({ card }) => {
         });
     }, []);
     return (
-        <div className="p-6 rounded-lg shadow-2xl text-black max-w-sm mx-auto border">
+        <div className="p-6 rounded-lg shadow-2xl text-black max-w-sm mx-auto border group">
             <div className="relative" data-aos="zoom-in">
                 <div className="flex justify-center mb-4">
-                    <img src={image} alt="App Screenshot" className="h-[210px] w-full rounded-lg" />
+                    <img src={image} alt="App Screenshot" className="h-[210px] w-full rounded-lg object-cover group-hover:scale-110 transition" />
                 </div>
             </div>
             <h2 className="text-2xl font-semibold text-left mb-2">{headline}</h2>
