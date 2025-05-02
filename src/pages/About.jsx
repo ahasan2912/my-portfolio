@@ -129,7 +129,7 @@ const About = () => {
                                     <h2 className="text-xl font-bold mb-2">Education</h2>
                                     <p className='font-semibold'>Daffodil International University (2021-2025)</p>
                                     <p className='font-semibold'>BSc in Computer Science and Engineering</p>
-                                    <p className='font-semibold'>SCGPA: 3.51</p>
+                                    <p className='font-semibold'>CGPA: 3.51</p>
                                     <h2 className="text-xl font-bold mt-1">Activies</h2>
                                     <p>
                                         <span className='font-semibold text-base'># </span>Event Volunteer ICPC Asia Dhaka Regional Final 2024 in DIU CPC.
