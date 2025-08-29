@@ -1,4 +1,3 @@
-import React from 'react';
 import errorpages from '../assets/errorpage.png'
 
 const ErrorPages = () => {

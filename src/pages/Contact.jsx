@@ -1,10 +1,8 @@
 import emailjs from '@emailjs/browser';
 import { useRef } from 'react';
 import { AiOutlineMail } from "react-icons/ai";
-import { FaPhoneAlt, FaTelegram, FaWhatsappSquare } from "react-icons/fa";
+import { FaPhoneAlt, FaWhatsappSquare } from "react-icons/fa";
 import { IoLocationSharp } from "react-icons/io5";
-import { MdOutlineEmail } from "react-icons/md";
-import { TfiEmail } from "react-icons/tfi";
 import toast, { Toaster } from 'react-hot-toast';
 import ReactWhatsapp from "react-whatsapp";
 import { Link } from 'react-router-dom';
@@ -36,7 +34,7 @@ const Contact = () => {
             </Helmet>
             <div className="container mx-auto px-4">
                 <Toaster />
-                <h1 className="text-4xl font-bold text-center my-10">Contact Me</h1>
+                <h1 className="text-5xl font-bold text-center my-10">Contact Me</h1>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     {/* Left Column - Form */}
                     <div className="bg-white shadow-md rounded-lg px-8 py-6">
@@ -141,7 +139,7 @@ const Contact = () => {
                             </div>
                             <div>
                                 <h3 className="font-semibold text-lg">Location</h3>
-                                <p className="text-gray-700">Ashulia, Savar, Dhaka</p>
+                                <p className="text-gray-700">Mirpur-1, Dhaka, Bangladesh</p>
                             </div>
                         </div>
                     </div>

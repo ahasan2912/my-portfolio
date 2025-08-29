@@ -22,7 +22,7 @@ const ProjectCard = ({ card }) => {
                 </div>
             </div>
             <h2 className="text-2xl font-semibold text-left mb-2">{headline}</h2>
-            <p className="mb-4 text-base text-justify">{description.substring(0, 100)}....</p>
+            <p className="mb-4 text-base text-justify">{description.substring(0, 111)}....</p>
             <div className="flex justify-center gap-3">
                 <Link to={sitelink} target="_blank" className="btn tn bg-gradient-to-r from-cyan-500 to-blue-500 text-white hover:text-gray-800"><FaEye className='text-2xl' /></Link>
                 <Link to={github} target="_blank" className="btn bg-gradient-to-r from-cyan-500 to-blue-500 text-white hover:text-gray-800"><FaGithub className='text-2xl' /></Link>

@@ -1,19 +1,16 @@
 import React, { useState } from 'react';
 import photo from '../assets/ahasan.jpg'
-import { FaArrowAltCircleRight, FaBootstrap, FaEye, FaGithub, FaHeart, FaNodeJs, FaReact } from 'react-icons/fa';
+import { FaBootstrap, FaEye, FaGithub, FaReact } from 'react-icons/fa';
 import { MdCastForEducation } from 'react-icons/md';
-import { RxActivityLog } from 'react-icons/rx';
 import { Link } from 'react-router-dom';
 import { IoLogoFirebase } from 'react-icons/io5';
 import { RiTailwindCssFill } from 'react-icons/ri';
-import { SiExpress, SiHostinger, SiReactquery, SiReactrouter } from 'react-icons/si';
+import { SiExpress, SiHostinger, SiReactquery, SiShadcnui, SiTypescript } from 'react-icons/si';
 import { DiMongodb } from 'react-icons/di';
 import { Helmet } from 'react-helmet-async';
-import { SiDaisyui } from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";
 const About = () => {
     const [activeTab, setActiveTab] = useState("skills");
-
     return (
         <div className="flex flex-col md:flex-row max-w-6xl mx-auto p-6 bg-[#f9f9f9] shadow-xl rounded-lg md:mt-16">
             {/* Left Section: Image */}
@@ -27,12 +24,11 @@ const About = () => {
                     className="rounded-md shadow-lg h-full object-cover hover:border-8 border-blue-400 duration-1000 ease-linear hover:transition"
                 />
             </div>
-
             {/* Right Section: Content */}
             <div className="w-full md:w-2/3 mt-6 md:mt-0 md:pl-6">
                 <h1 className="text-4xl font-bold text-gray-800 mb-4">About Me</h1>
                 <p className="text-gray-600 mb-4 text-justify">
-                    I am Frontend Web Developer with knowledge of JavaScript, React.js, Next.js and variety of frontend technologies. Easy to understanding fundamentals concept of React component lifecycle and Pixel perfect design Figma to HTML. I am motivated to offer my diverse abilities to relevant and innovative projects because I am committed to code quality and continual learning.
+                    I am Frontend Developer with knowledge of JavaScript, React.js, Next.js and variety of frontend technologies. Easy to understanding fundamentals concept of React component lifecycle and Pixel perfect design Figma to HTML. I am motivated to offer my diverse abilities to relevant and innovative projects because I am committed to code quality and continual learning.
                 </p>
                 <p className="text-gray-600 mb-4 text-justify">
                     Every day is a journey of discovery, where books and writing inspire my creativity and give me new perspectives. The diverse stories of people motivate me, and I see coding not just as a job but as a way to create something meaningful and solve problems. My deep love for learning drives me to explore, innovate, and keep seeking knowledge endlessly.
@@ -76,16 +72,16 @@ const About = () => {
                                         <span className='text-lg'>Next js</span>
                                     </li>
                                     <li className="flex items-center gap-1">
+                                        <SiTypescript size={22} />
+                                        <span className='text-lg'>TypeScript</span>
+                                    </li>
+                                    <li className="flex items-center gap-1">
                                         <SiExpress size={22} />
                                         <span className='text-lg'>Express js</span>
                                     </li>
                                     <li className="flex items-center gap-1">
                                         <DiMongodb size={22} />
                                         <span className='text-lg'>MongoDB</span>
-                                    </li>
-                                    <li className="flex items-center gap-1">
-                                        <SiReactrouter size={22} />
-                                        <span className='text-lg'>React - Router</span>
                                     </li>
                                     <li className="flex items-center gap-1">
                                         <SiReactquery size={22} />
@@ -98,22 +94,22 @@ const About = () => {
                                         <span className='text-lg'> Tailwind CSS</span>
                                     </li>
                                     <li className="flex items-center gap-1">
-                                        <SiDaisyui size={26} />
-                                        <span className='text-lg'>DaisyUI Components</span>
-                                    </li>
-                                    <li className="flex items-center gap-1">
                                         <FaBootstrap size={22} />
                                         <span className='text-lg'> Bootstrap</span>
                                     </li>
                                     <li className="flex items-center gap-1">
+                                        <SiShadcnui size={26} />
+                                        <span className='text-lg'>Shadcn ui</span>
+                                    </li>
+                                    <li className="flex items-center gap-1">
                                         <IoLogoFirebase size={22} />
-                                        <span className='text-lg'> Firebase && JWT Authentication</span>
+                                        <span className='text-lg'> Firebase && JWT Authentication && Next-auth</span>
                                     </li>
                                     <li className="flex items-center gap-1">
                                         <FaGithub size={22} />
                                         <span className='text-lg'>Git & GitHub Collaboration</span>
                                     </li>
-                                    <li className="flex items-center gap-1">
+                                    <li className="flex items-center gap-2">
                                         <SiHostinger />
                                         <span className='text-lg'>Netlify, Surge & Vercel</span>
                                     </li>
@@ -129,7 +125,7 @@ const About = () => {
                                     <h2 className="text-xl font-bold mb-2">Education</h2>
                                     <p className='font-semibold'>Daffodil International University (2021-2025)</p>
                                     <p className='font-semibold'>BSc in Computer Science and Engineering</p>
-                                    <p className='font-semibold'>CGPA: 3.51</p>
+                                    <p className='font-semibold'>CGPA: 3.50</p>
                                     <h2 className="text-xl font-bold mt-1">Activies</h2>
                                     <p>
                                         <span className='font-semibold text-base'># </span>Event Volunteer ICPC Asia Dhaka Regional Final 2024 in DIU CPC.
