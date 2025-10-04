@@ -111,7 +111,7 @@ const About = () => {
                                     </li>
                                     <li className="flex items-center gap-2">
                                         <SiHostinger />
-                                        <span className='text-lg'>Netlify, Surge & Vercel</span>
+                                        <span className='text-lg'>Netlify and Vercel</span>
                                     </li>
                                 </div>
                             </ul>
