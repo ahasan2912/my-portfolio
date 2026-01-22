@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "image": "../src/assets/images/cycle.jpg",
+    "image": "../images/cycle.jpg",
     "headline": "VehicleBD-Market",
     "description": "VehicleBD-Market is a simple full-stack project built with Next.js, TypeScript, Tailwind CSS and MongoDB Databas. It features two roles: normal users and admins. Normal users can register, log in, place product orders, edit or delete their orders, while admins can add products, manage users, and handle the complete order list. This project ensures a smooth and structured vehicle marketplace experience.",
     "github": "https://github.com/ahasan2912/vehiclebd-market",
@@ -10,7 +10,7 @@
   },
   {
     "id": 2,
-    "image": "../src/assets/images/blood.jpg",
+    "image": "../images/blood.jpg",
     "headline": "BloodLink",
     "description": "BloodLink is a full-stack application designed to efficiently connect blood donors, recipients, and hospitals. The platform enables seamless donor registration, quick matching of urgent blood requests, and uses NodeMailer to send automated email notifications for smooth and effective communication. By minimizing delays and enhancing coordination, BloodLink plays a crucial role in saving lives and strengthening healthcare outcomes.",
     "github": "https://github.com/ahasan2912/blood-donation-system",
@@ -19,7 +19,7 @@
   },
   {
     "id": 3,
-    "image": "../src/assets/images/medicale.jpg",
+    "image": "../images/medicale.jpg",
     "headline": "Medihub Medical Store",
     "description": "MediHub Medical Store is a multi-vendor e-commerce platform built with the FullStack, enabling seamless online medicine and healthcare product sales. It offers role-based authentication, allowing buyers, sellers, and admins to manage their respective dashboards. Key features include product management, secure Stripe payments, order tracking, and real-time updates. The platform ensures responsive design, JWT authentication, private routes, and secure data storage. With pagination, sorting, searching, React Hook Form, TanStack Query, and SEO optimization, MediHub delivers a high-performance and user-friendly experience for online medical shopping.",
     "github": "https://github.com/ahasan2912/mediHub-client-side",
@@ -28,7 +28,7 @@
   },
   {
     "id": 4,
-    "image": "../src/assets/images/Sushi-Platter-08.jpg",
+    "image": "../images/Sushi-Platter-08.jpg",
     "headline": "Pastaria Hotel and Restaurant",
     "description": "The Pastaria Hotel and Restaurant Management Website is a full-stack application developed using the MERN stack (MongoDB, Express.js, React.js, and Node.js). This project aims to enhance customer engagement with features like online reservations and ordering while streamlining internal operations, including staff and order management, to improve overall efficiency and user experience. The purpose of the Pastaria Hotel and Restaurant Management Website is to enhance customer engagement through a user-friendly platform while optimizing internal operations like staff and order management for improved efficiency and service quality.",
     "github": "https://github.com/ahasan2912/restaurant-management-system-client",
@@ -37,7 +37,7 @@
   },
   {
     "id": 5,
-    "image": "../src/assets/images/Tennis-Balls.jpg",
+    "image": "../images/Tennis-Balls.jpg",
     "headline": "Online Sports Store",
     "description": "The Sports Accessories Online Store is a responsive e-commerce platform designed to provide customers with an efficient and user-friendly shopping experience for a wide range of sports equipment and apparel. The website offers features such as intuitive browsing, secure user authentication, and detailed product reviews. It caters to various sports disciplines, ensuring accessibility for enthusiasts and professionals alike. The platform also includes robust product management, allowing seamless inventory updates. With a focus on functionality and design, the store ensures a responsive and engaging experience across all devices, aiming to meet the needs of sports enthusiasts worldwide.",
     "sitelink": "https://sport-equipment-store2912.netlify.app/",
@@ -45,7 +45,7 @@
   },
   {
     "id": 6,
-    "image": "../src/assets/images/dell-2619501-640.jpg",
+    "image": "../images/dell-2619501-640.jpg",
     "headline": "Gadget-Zone e-commerce",
     "description": "Gadget-Zone is an e-commerce platform for gadget enthusiasts, offering products like laptops, smartphones, and accessories. It features detailed product pages, a shopping cart, wishlist, and filtering options. Built with React, Tailwind CSS, and Context API, ensuring smooth navigation and data persistence.",
     "github": "https://github.com/ahasan2912/gadget-zone-react-router",
@@ -53,3 +53,4 @@
     "technologies": ["React js","React Router", "Tailwind CSS", "DaisyUI", "Swiper js", "React Toastify", "React Icons", "Git & GitHub"]
   }
 ]
+
