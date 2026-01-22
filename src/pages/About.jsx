@@ -9,6 +9,7 @@ import { SiExpress, SiHostinger, SiReactquery, SiShadcnui, SiTypescript } from '
 import { DiMongodb } from 'react-icons/di';
 import { Helmet } from 'react-helmet-async';
 import { RiNextjsFill } from "react-icons/ri";
+import { TbBrandRedux } from 'react-icons/tb';
 const About = () => {
     const [activeTab, setActiveTab] = useState("skills");
     return (
@@ -89,13 +90,13 @@ const About = () => {
                                     </li>
                                 </div>
                                 <div>
-                                <li className="flex items-center gap-1">
-                                        <RiTailwindCssFill size={22} />
-                                        <span className='text-lg'> Tailwind CSS</span>
+                                    <li className="flex items-center gap-1">
+                                        <TbBrandRedux size={22} />
+                                        <span className='text-lg'>Redux Toolkit, RTK Query,</span>
                                     </li>
                                     <li className="flex items-center gap-1">
-                                        <FaBootstrap size={22} />
-                                        <span className='text-lg'> Bootstrap</span>
+                                        <RiTailwindCssFill size={22} />
+                                        <span className='text-lg'> Tailwind CSS</span>
                                     </li>
                                     <li className="flex items-center gap-1">
                                         <SiShadcnui size={26} />
