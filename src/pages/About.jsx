@@ -1,30 +1,33 @@
 import React, { useState } from 'react';
 import photo from '../assets/ahasan.jpg'
 import { FaBootstrap, FaEye, FaGithub, FaReact } from 'react-icons/fa';
-import { MdCastForEducation } from 'react-icons/md';
+import { MdCastForEducation, MdWork } from 'react-icons/md';
 import { Link } from 'react-router-dom';
 import { IoLogoFirebase } from 'react-icons/io5';
-import { RiTailwindCssFill } from 'react-icons/ri';
+import { RiTailwindCssFill, RiNextjsFill } from 'react-icons/ri';
 import { SiExpress, SiHostinger, SiReactquery, SiShadcnui, SiTypescript } from 'react-icons/si';
 import { DiMongodb } from 'react-icons/di';
 import { Helmet } from 'react-helmet-async';
-import { RiNextjsFill } from "react-icons/ri";
 import { TbBrandRedux } from 'react-icons/tb';
+
 const About = () => {
     const [activeTab, setActiveTab] = useState("skills");
+
     return (
         <div className="flex flex-col md:flex-row max-w-6xl mx-auto p-6 bg-[#f9f9f9] shadow-xl rounded-lg md:mt-16">
-            {/* Left Section: Image */}
             <Helmet>
                 <title>Ahasan's World | About</title>
             </Helmet>
+
+            {/* Left Section: Image */}
             <div className="w-full md:w-1/3">
                 <img
-                    src={photo} // Replace this URL with your uploaded image
+                    src={photo}
                     alt="Profile"
                     className="rounded-md shadow-lg h-full object-cover hover:border-8 border-blue-400 duration-1000 ease-linear hover:transition"
                 />
             </div>
+
             {/* Right Section: Content */}
             <div className="w-full md:w-2/3 mt-6 md:mt-0 md:pl-6">
                 <h1 className="text-4xl font-bold text-gray-800 mb-4">About Me</h1>
@@ -34,39 +37,65 @@ const About = () => {
                 <p className="text-gray-600 mb-4 text-justify">
                     Every day is a journey of discovery, where books and writing inspire my creativity and give me new perspectives. The diverse stories of people motivate me, and I see coding not just as a job but as a way to create something meaningful and solve problems. My deep love for learning drives me to explore, innovate, and keep seeking knowledge endlessly.
                 </p>
+
                 {/* Tabs */}
-                <div className="tabs bg-gray-100 shadow-xl py-2 flex justify-between px-10 ">
+                <div className="tabs bg-gray-100 shadow-xl py-2 flex justify-between px-10">
+                    {/* Skills Tab */}
                     <div className='flex flex-col items-center justify-center'>
-                        <FaEye className={`text-2xl ${activeTab === "skills" ? "tab-active text-[#3f51b5]" : ""}`}
-                            onClick={() => setActiveTab("skills")} />
+                        <FaEye
+                            className={`text-2xl ${activeTab === "skills" ? "tab-active text-[#3f51b5]" : ""}`}
+                            onClick={() => setActiveTab("skills")}
+                        />
                         <button
-                            className={`tab tab-bordered text-lg font-semibold  ${activeTab === "skills" ? "tab-active text-[#3f51b5]" : ""}`}
-                            onClick={() => setActiveTab("skills")}>SKILLS
+                            className={`tab tab-bordered text-lg font-semibold ${activeTab === "skills" ? "tab-active text-[#3f51b5]" : ""}`}
+                            onClick={() => setActiveTab("skills")}
+                        >
+                            SKILLS
                         </button>
                     </div>
+
+                    {/* Education Tab */}
                     <div className='flex flex-col items-center justify-center'>
-                        <MdCastForEducation className={`text-2xl ${activeTab === "education" ? "tab-active text-[#3f51b5]" : ""}`}
-                            onClick={() => setActiveTab("education")} />
-                        <button
-                            className={`tab tab-bordered text-lg font-semibold ${activeTab === "education" ? "tab-active text-[#3f51b5]" : ""
-                                }`}
+                        <MdCastForEducation
+                            className={`text-2xl ${activeTab === "education" ? "tab-active text-[#3f51b5]" : ""}`}
                             onClick={() => setActiveTab("education")}
-                        >EDUCATION
+                        />
+                        <button
+                            className={`tab tab-bordered text-lg font-semibold ${activeTab === "education" ? "tab-active text-[#3f51b5]" : ""}`}
+                            onClick={() => setActiveTab("education")}
+                        >
+                            EDUCATION
+                        </button>
+                    </div>
+
+                    {/* Experience Tab */}
+                    <div className='flex flex-col items-center justify-center'>
+                        <MdWork
+                            className={`text-2xl ${activeTab === "experience" ? "tab-active text-[#3f51b5]" : ""}`}
+                            onClick={() => setActiveTab("experience")}
+                        />
+                        <button
+                            className={`tab tab-bordered text-lg font-semibold ${activeTab === "experience" ? "tab-active text-[#3f51b5]" : ""}`}
+                            onClick={() => setActiveTab("experience")}
+                        >
+                            EXPERIENCE
                         </button>
                     </div>
                 </div>
 
                 {/* Tab Content */}
                 <div className="mt-4">
+
+                    {/* Skills Content */}
                     {activeTab === "skills" && (
-                        <div className=''>
+                        <div>
                             <h2 className="text-xl font-bold mb-2">Skills</h2>
                             <div className='border my-2'></div>
                             <ul className="flex flex-col md:flex-row gap-5 md:gap-16">
                                 <div>
                                     <li className="flex items-center gap-1">
                                         <FaReact size={22} />
-                                        <span className='text-lg'> React js</span>
+                                        <span className='text-lg'>React js</span>
                                     </li>
                                     <li className="flex items-center gap-1">
                                         <RiNextjsFill size={22} />
@@ -92,11 +121,11 @@ const About = () => {
                                 <div>
                                     <li className="flex items-center gap-1">
                                         <TbBrandRedux size={22} />
-                                        <span className='text-lg'>Redux Toolkit, RTK Query,</span>
+                                        <span className='text-lg'>Redux Toolkit, RTK Query</span>
                                     </li>
                                     <li className="flex items-center gap-1">
                                         <RiTailwindCssFill size={22} />
-                                        <span className='text-lg'> Tailwind CSS</span>
+                                        <span className='text-lg'>Tailwind CSS</span>
                                     </li>
                                     <li className="flex items-center gap-1">
                                         <SiShadcnui size={26} />
@@ -104,7 +133,7 @@ const About = () => {
                                     </li>
                                     <li className="flex items-center gap-1">
                                         <IoLogoFirebase size={22} />
-                                        <span className='text-lg'> Firebase && JWT Authentication && Next-auth</span>
+                                        <span className='text-lg'>Firebase && JWT Authentication && Next-auth</span>
                                     </li>
                                     <li className="flex items-center gap-1">
                                         <FaGithub size={22} />
@@ -118,7 +147,8 @@ const About = () => {
                             </ul>
                         </div>
                     )}
-                    {/* Tab Content */}
+
+                    {/* Education Content */}
                     {activeTab === "education" && (
                         <div>
                             <div className='flex flex-col md:flex-row justify-between gap-3'>
@@ -127,11 +157,12 @@ const About = () => {
                                     <p className='font-semibold'>Daffodil International University (2021-2025)</p>
                                     <p className='font-semibold'>BSc in Computer Science and Engineering</p>
                                     <p className='font-semibold'>CGPA: 3.50</p>
-                                    <h2 className="text-xl font-bold mt-1">Activies</h2>
+                                    <h2 className="text-xl font-bold mt-1">Activities</h2>
                                     <p>
                                         <span className='font-semibold text-base'># </span>Event Volunteer ICPC Asia Dhaka Regional Final 2024 in DIU CPC.
                                     </p>
-                                    <p><span className='font-semibold text-base'># </span>Participate Art of Living Seminar at DIU
+                                    <p>
+                                        <span className='font-semibold text-base'># </span>Participate Art of Living Seminar at DIU
                                     </p>
                                 </div>
                                 <div className='w-full md:w-1/2'>
@@ -145,13 +176,40 @@ const About = () => {
                                         (04/2022) <Link to='https://toph.co/c/diu-take-off-2022/standings' target="_blank" className='text-blue-500'>Link...</Link>
                                     </p>
                                     <p>
-                                        <span className='font-semibold text-base'># </span>Unlock the Algorithm Programming Conteset DIU
-                                        <span className='font-semibold'> Ranking 46th </span>  (04/2023) <Link to='https://toph.co/c/unlock-the-algorithm-spring-2023/standings' target="_blank" className='text-blue-500'>Link...</Link>
+                                        <span className='font-semibold text-base'># </span>Unlock the Algorithm Programming Contest DIU
+                                        <span className='font-semibold'> Ranking 46th </span> (04/2023) <Link to='https://toph.co/c/unlock-the-algorithm-spring-2023/standings' target="_blank" className='text-blue-500'>Link...</Link>
                                     </p>
                                 </div>
                             </div>
                         </div>
                     )}
+
+                    {/* Experience Content */}
+                    {activeTab === "experience" && (
+                        <div>
+                            <h2 className="text-xl font-bold mb-2">Experience</h2>
+                            <div className='border my-2'></div>
+                            <div className='flex flex-col gap-1'>
+                                <div className='flex flex-wrap items-baseline gap-2'>
+                                    <p className='font-semibold text-base'>Frontend Developer</p>
+                                    <p className='font-semibold'>Beup Tech — Betopia Group</p>
+                                    <p className='text-gray-700 font-medium text-sm'>(10/2025 – Present)</p>
+                                </div>
+                                <ul className='mt-2 flex flex-col gap-2'>
+                                    <p>
+                                        <span className='font-semibold text-base'># </span>Designed multiple dynamic and browser-compatible pages using HTML, CSS, TypeScript, React, Next and Redux.
+                                    </p>
+                                    <p>
+                                        <span className='font-semibold text-base'># </span>Applied a strong understanding of React component lifecycle to build performant, maintainable UIs.
+                                    </p>
+                                    <p>
+                                        <span className='font-semibold text-base'># </span>Integrated REST APIs to fetch and display real-time data across various web applications.
+                                    </p>
+                                </ul>
+                            </div>
+                        </div>
+                    )}
+
                 </div>
             </div>
         </div>

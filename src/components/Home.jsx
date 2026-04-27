@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
-import photo from "../assets/new.jpg";
+import photo from "../assets/new.png";
 import { Link } from "react-router-dom";
 import { TypeAnimation } from "react-type-animation";
 import { Helmet } from "react-helmet-async";
@@ -26,7 +26,7 @@ const Home = () => {
             </Helmet>
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-40 w-full">
                 <div className="flex flex-col items-center justify-center gap-2 sm:gap-4 text-center px-2">
-                    <img className="rounded-full w-60 h-60 border border-gray-500 p-2" src={photo} alt="" />
+                    <img className="rounded-full w-60 h-60 border border-gray-500 p-2 object-fill" src={photo} alt="" />
                     <div>
                         <h1 className="text-5xl text-black font-bold text-center">Welcome Ahasan's World</h1>
                     </div>
