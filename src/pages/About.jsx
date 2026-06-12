@@ -5,7 +5,7 @@ import { MdCastForEducation, MdWork } from 'react-icons/md';
 import { Link } from 'react-router-dom';
 import { IoLogoFirebase } from 'react-icons/io5';
 import { RiTailwindCssFill, RiNextjsFill } from 'react-icons/ri';
-import { SiExpress, SiHostinger, SiReactquery, SiShadcnui, SiTypescript } from 'react-icons/si';
+import { SiExpress, SiHostinger, SiReactquery, SiShadcnui, SiTypescript, SiVitest } from 'react-icons/si';
 import { DiMongodb } from 'react-icons/di';
 import { Helmet } from 'react-helmet-async';
 import { TbBrandRedux } from 'react-icons/tb';
@@ -114,14 +114,14 @@ const About = () => {
                                         <span className='text-lg'>MongoDB</span>
                                     </li>
                                     <li className="flex items-center gap-1">
-                                        <SiReactquery size={22} />
-                                        <span className='text-lg'>React Query</span>
+                                        <SiVitest size={22} />
+                                        <span className='text-lg'>Vitest</span>
                                     </li>
                                 </div>
                                 <div>
                                     <li className="flex items-center gap-1">
                                         <TbBrandRedux size={22} />
-                                        <span className='text-lg'>Redux Toolkit, RTK Query</span>
+                                        <span className='text-lg'>Redux Toolkit, RTK Query and TanStack Query</span>
                                     </li>
                                     <li className="flex items-center gap-1">
                                         <RiTailwindCssFill size={22} />
@@ -192,18 +192,15 @@ const About = () => {
                             <div className='flex flex-col gap-1'>
                                 <div className='flex flex-wrap items-baseline gap-2'>
                                     <p className='font-semibold text-base'>Frontend Developer</p>
-                                    <p className='font-semibold'>Beup Tech — Betopia Group</p>
-                                    <p className='text-gray-700 font-medium text-sm'>(10/2025 – Present)</p>
+                                    <p className='font-semibold'>Beup Tech � Betopia Group</p>
+                                    <p className='text-gray-700 font-medium text-sm'>(10/2025 � Present)</p>
                                 </div>
                                 <ul className='mt-2 flex flex-col gap-2'>
                                     <p>
-                                        <span className='font-semibold text-base'># </span>Designed multiple dynamic and browser-compatible pages using HTML, CSS, TypeScript, React, Next and Redux.
+                                        <span className='font-semibold text-base'># </span>Frontend Developer specializing in high-performance React/Next.js applications. Proven ability to integrate complex REST APIs and manage global state in full-stack environments.
                                     </p>
                                     <p>
-                                        <span className='font-semibold text-base'># </span>Applied a strong understanding of React component lifecycle to build performant, maintainable UIs.
-                                    </p>
-                                    <p>
-                                        <span className='font-semibold text-base'># </span>Integrated REST APIs to fetch and display real-time data across various web applications.
+                                        <span className='font-semibold text-base'># </span>Architected 5+ responsive modules using TypeScript and Tailwind CSS, reducing redundant code by 20% and ensuring 100% mobile responsiveness.
                                     </p>
                                 </ul>
                             </div>

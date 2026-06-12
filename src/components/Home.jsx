@@ -28,7 +28,7 @@ const Home = () => {
                 <div className="flex flex-col items-center justify-center gap-2 sm:gap-4 text-center px-2">
                     <img className="rounded-full w-60 h-60 border border-gray-500 p-2 object-fill" src={photo} alt="" />
                     <div>
-                        <h1 className="text-5xl text-black font-bold text-center">Welcome Ahasan's World</h1>
+                        <h1 className="text-[40px] text-black font-bold text-center">Welcome Ahasan's World</h1>
                     </div>
                     <div className="mt-1">
                         <TypeAnimation
